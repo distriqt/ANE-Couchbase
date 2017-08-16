@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="Document,com.distriqt.extension.couchbase.Document,EXT_CONTEXT_ID,STORAGE_FORESTDB,STORAGE_SQLITE,VERSION,changesCount,completedChangesCount,create,database,databaseName,documentCount,documentID,encryptionKey,implementation,isPullReplication,isSupported,lastError,lastSequenceNumber,maxRevTreeDepth,method,nativeVersion,password,properties,readOnly,remoteUrl,running,service,status,storageType,username,version,basicAuthenticator,close,commit,compact,createDocument,databaseExistsNamed,deleteDocument,dispose,enableLogging,getAllDatabaseNames,getAllDocuments,getDatabase,getDocument,getExistingDocument,getProperties,isValidDatabaseName,putProperties,setup,sync"><title>com.distriqt.extension.couchbase.Document</title></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Document - distriqt // Couchbase';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Couchbase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?com/distriqt/extension/couchbase/Document.html&amp;com/distriqt/extension/couchbase/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Document</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Document"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.couchbase</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  Document</td></tr></table><p></p><p></p><p></p>
+	              <p>
+	 This class represents a Document in the CouchbaseLite Mobile API.
+	 You should NOT create this class directly but instead use the
+	 functionality of a <code>Database</code> to create/get a <code>Document</code>.
+	 </p>
+	 	            <p>
+	 Properties should be key/value pairs. Values must be of a primitive data
+	 type, <code>int</code>, <code>Number</code>, <code>String</code> or
+	 <code>Boolean</code>
+	              </p>
+	 	         <p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="Database.html#createDocument()" target="">com.distriqt.extension.couchbase.Database.createDocument()</a><br/><a href="Database.html#getDocument()" target="">com.distriqt.extension.couchbase.Database.getDocument()</a><br/><a href="Database.html#getExistingDocument()" target="">com.distriqt.extension.couchbase.Database.getExistingDocument()</a></div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#database" class="signatureLink">database</a> : <a href="../../../../com/distriqt/extension/couchbase/Database.html">Database</a><div class="summaryTableDescription">[read-only] 
+		 
+		 Gets the Database that owns this Document.</div></td><td class="summaryTableOwnerCol">Document</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#documentID" class="signatureLink">documentID</a> : String<div class="summaryTableDescription">[read-only] 
+		 
+		 Gets the Document's id.</div></td><td class="summaryTableOwnerCol">Document</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#properties" class="signatureLink">properties</a> : Object<div class="summaryTableDescription">[read-only] 
+		 
+		 Gets the properties of the current Revision of the Document.</div></td><td class="summaryTableOwnerCol">Document</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#commit()" class="signatureLink">commit</a>():void</div><div class="summaryTableDescription">
+		 
+		 Commits any local changes to the properties object
+		 to the Couchbase database document, and updates with any revision
+		 changes.</div></td><td class="summaryTableOwnerCol">Document</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getProperties()" class="signatureLink">getProperties</a>():Object</div><div class="summaryTableDescription">
+		 
+		 Gets the properties of the current Revision of the Document.</div></td><td class="summaryTableOwnerCol">Document</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#putProperties()" class="signatureLink">putProperties</a>(props:Object):void</div><div class="summaryTableDescription">
+		 
+		 Puts the specified properties to the database and updates the revision
+		 of this object.</div></td><td class="summaryTableOwnerCol">Document</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="database"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">database</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>database:<a href="../../../../com/distriqt/extension/couchbase/Database.html">Database</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 Gets the Database that owns this Document.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get database():<a href="../../../../com/distriqt/extension/couchbase/Database.html">Database</a></code><br/></div><a name="propertyDetail"></a><a name="documentID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">documentID</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>documentID:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 Gets the Document's id.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get documentID():String</code><br/></div><a name="propertyDetail"></a><a name="properties"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">properties</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>properties:Object</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 Gets the properties of the current Revision of the Document.
+		 </p>
+		 <p>
+		 This is a local version and doesn't directly commit to the
+		 Couchbase db until <code>commit</code> is called.
+		 </p>
+		 		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get properties():Object</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="Document.html#commit()" target="">commit()</a></div></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="commit()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">commit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function commit():void</code><p></p><p></p><p>
+		 <p>
+		 Commits any local changes to the <code>properties</code> object
+		 to the Couchbase database document, and updates with any revision
+		 changes.
+		 </p>
+		 		 </p><br/><span class="label"> Example </span><br/><div class="detailBody">		 <p>
+		 The following is a simple example showing the creation of a document
+		 and then adding some properties to the document. It assumes a database
+		 reference has already been retrieved. The properties are saved with
+		 the <code>commit</code> call.
+		 </p>
+		 		 <div class="listing"><pre>
+         var doc:Document = db.createDocument();
+                  doc.properties.someTestValue  = 12345678;
+         doc.properties.someTestString = "a test string";
+                  doc.commit();
+         </pre></div>
+		 		 </div></div><a name="getProperties()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getProperties</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getProperties():Object</code><p></p><p></p><p>
+		 <p>
+		 Gets the properties of the current Revision of the Document.
+		 </p>
+		 <p>
+		 This will update the <code>properties</code> object and any
+		 local changes will be lost
+		 </p>
+		 		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; The properties object
+		 		 </td></tr></table></div><a name="putProperties()"></a><a name="putProperties(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">putProperties</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function putProperties(props:Object):void</code><p></p><p></p><p>
+		 <p>
+		 Puts the specified properties to the database and updates the revision
+		 of this object.
+		 </p>
+		 		 <p>
+		 Properties should be key/value pairs. Values must be of a primative data
+		 type, <code>int</code>, <code>Number</code>, <code>String</code> or
+		 <code>Boolean</code>
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">props</span>:Object</code> &mdash; The properties to set on the document
+		 		 </td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Wed Aug 16 2017, 08:40 AM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Wed Aug 16 2017, 08:40 AM +10:00  -->

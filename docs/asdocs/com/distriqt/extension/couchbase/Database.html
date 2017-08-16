@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="Database,com.distriqt.extension.couchbase.Database,EXT_CONTEXT_ID,STORAGE_FORESTDB,STORAGE_SQLITE,VERSION,changesCount,completedChangesCount,create,database,databaseName,documentCount,documentID,encryptionKey,implementation,isPullReplication,isSupported,lastError,lastSequenceNumber,maxRevTreeDepth,method,nativeVersion,password,properties,readOnly,remoteUrl,running,service,status,storageType,username,version,basicAuthenticator,close,commit,compact,createDocument,databaseExistsNamed,deleteDocument,dispose,enableLogging,getAllDatabaseNames,getAllDocuments,getDatabase,getDocument,getExistingDocument,getProperties,isValidDatabaseName,putProperties,setup,sync"><title>com.distriqt.extension.couchbase.Database</title></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Database - distriqt // Couchbase';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Couchbase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?com/distriqt/extension/couchbase/Database.html&amp;com/distriqt/extension/couchbase/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Database</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Database"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.couchbase</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  Database extends  flash.events.IEventDispatcher</td></tr></table><p></p><p></p><p></p>
+	              <p>
+	 This class represents a Database in the CouchbaseLite Mobile API.
+	 You should NOT create this class directly but instead use the core
+	 <code>Couchbase</code> extension to get or create a database.
+	 </p>
+	 	 	       <p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="Couchbase.html#getDatabase()" target="">com.distriqt.extension.couchbase.Couchbase.getDatabase()</a></div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#databaseName" class="signatureLink">databaseName</a> : String<div class="summaryTableDescription">
+		 
+		 Gets the _DatabaseImpl name.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#documentCount" class="signatureLink">documentCount</a> : int<div class="summaryTableDescription">[read-only] 
+		 
+		 Gets the number of Documents in the _DatabaseImpl.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#lastSequenceNumber" class="signatureLink">lastSequenceNumber</a> : Number<div class="summaryTableDescription">[read-only] 
+		 
+		 Gets the latest sequence number used by the _DatabaseImpl.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#maxRevTreeDepth" class="signatureLink">maxRevTreeDepth</a> : int<div class="summaryTableDescription">
+		 The maximum depth of a document's revision tree (or, max length of its revision history.)
+		 Revisions older than this limit will be deleted during a compact operation.</div></td><td class="summaryTableOwnerCol">Database</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#close()" class="signatureLink">close</a>():Boolean</div><div class="summaryTableDescription">
+		 
+		 Closes a database.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#compact()" class="signatureLink">compact</a>():Boolean</div><div class="summaryTableDescription">
+		 
+		 Compacts the database file by purging non-current JSON bodies, pruning
+		 revisions older than the maxRevTreeDepth, deleting unused attachment
+		 files, and vacuuming the SQLite database.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createDocument()" class="signatureLink">createDocument</a>():<a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></div><div class="summaryTableDescription">
+		 
+		 Creates a Document with a unique id.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteDocument()" class="signatureLink">deleteDocument</a>(documentID:String):Boolean</div><div class="summaryTableDescription">
+		 
+		 Deletes the local document with the given id.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getAllDocuments()" class="signatureLink">getAllDocuments</a>():Boolean</div><div class="summaryTableDescription">
+		 
+		 
+		 		 </div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDocument()" class="signatureLink">getDocument</a>(documentID:String):<a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></div><div class="summaryTableDescription">
+		 
+		 Gets or creates the Document with the given id.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getExistingDocument()" class="signatureLink">getExistingDocument</a>(documentID:String):<a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></div><div class="summaryTableDescription">
+		 
+		 Gets the Document with the given id, or null if it does not exist.</div></td><td class="summaryTableOwnerCol">Database</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sync()" class="signatureLink">sync</a>(url:String, auth:<a href="../../../../com/distriqt/extension/couchbase/Authenticator.html">Authenticator</a> = null):Boolean</div><div class="summaryTableDescription">
+		 
+		 
+		 		 </div></td><td class="summaryTableOwnerCol">Database</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="databaseName"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">databaseName</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>databaseName:String</code><p></p><p></p><p>
+		 <p>
+		 Gets the _DatabaseImpl name.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get databaseName():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set databaseName(value:String):void</code><br/></div><a name="propertyDetail"></a><a name="documentCount"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">documentCount</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>documentCount:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 Gets the number of Documents in the _DatabaseImpl.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get documentCount():int</code><br/></div><a name="propertyDetail"></a><a name="lastSequenceNumber"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">lastSequenceNumber</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>lastSequenceNumber:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 Gets the latest sequence number used by the _DatabaseImpl. Every new
+		 Revision is assigned a new sequence number, so this property
+		 increases monotonically as changes are made to the _DatabaseImpl.
+		 This can be used to check whether the _DatabaseImpl has changed
+		 between two points in time.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get lastSequenceNumber():Number</code><br/></div><a name="propertyDetail"></a><a name="maxRevTreeDepth"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">maxRevTreeDepth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>maxRevTreeDepth:int</code><p></p><p></p><p>
+		 The maximum depth of a document's revision tree (or, max length of its revision history.)
+		 Revisions older than this limit will be deleted during a <code>compact</code> operation.
+		 Smaller values save space, at the expense of making document conflicts somewhat more likely.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get maxRevTreeDepth():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxRevTreeDepth(value:int):void</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="close()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">close</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function close():Boolean</code><p></p><p></p><p>
+		 <p>
+		 Closes a database.
+		 </p>
+		 <p>
+		 This first stops all replications, and saves all changes to model objects.
+		 It returns <code>false</code> if some models failed to save.
+		 </p>
+		 		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; </td></tr></table></div><a name="compact()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">compact</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function compact():Boolean</code><p></p><p></p><p>
+		 <p>
+		 Compacts the database file by purging non-current JSON bodies, pruning
+		 revisions older than the <code>maxRevTreeDepth</code>, deleting unused attachment
+		 files, and vacuuming the SQLite database.
+		 </p>
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code></td></tr></table></div><a name="createDocument()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">createDocument</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function createDocument():<a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></code><p></p><p></p><p>
+		 <p>
+		 Creates a Document with a unique id.
+		 </p>
+		 		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></code> &mdash; A Document with a unique id.
+		 		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody"><p>
+		 The following is a simple example showing the creation of a document
+		 and then adding some properties to the document. It assumes a database
+		 reference has already been retrieved.
+		 </p>
+		 		 <div class="listing"><pre>
+         var doc:Document = db.createDocument();
+                  doc.properties.someTestValue  = 12345678;
+         doc.properties.someTestString = "a test string";
+                  doc.commit();
+         </pre></div>
+		 </div></div><a name="deleteDocument()"></a><a name="deleteDocument(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteDocument</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteDocument(documentID:String):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Deletes the local document with the given id.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">documentID</span>:String</code> &mdash; 	The id of the Document to delete.
+		 		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; true if the Document was successfully deleted and
+		 			false if there was an error. If an error occurred you
+		 			should attempt the operation again later.
+		 		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody"><p>
+		 The following attempts to delete a document and shows the success
+		 </p>
+		 <div class="listing"><pre>
+         var success:Boolean = db.deleteDocument( documentId );
+         trace( "DOCUMENT DELETE: " + success );
+         </pre></div>
+		 </div></div><a name="getAllDocuments()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getAllDocuments</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getAllDocuments():Boolean</code><p></p><p></p><p>
+		 <p>
+		 </p>
+		 		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; </td></tr></table></div><a name="getDocument()"></a><a name="getDocument(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getDocument</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getDocument(documentID:String):<a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></code><p></p><p></p><p>
+		 <p>
+		 Gets or creates the Document with the given id.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">documentID</span>:String</code> &mdash; 	The id of the Document to get or create.
+		 		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></code> &mdash; The Document with the given id.
+		 		 </td></tr></table></div><a name="getExistingDocument()"></a><a name="getExistingDocument(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getExistingDocument</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getExistingDocument(documentID:String):<a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></code><p></p><p></p><p>
+		 <p>
+		 Gets the Document with the given id, or null if it does not exist.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">documentID</span>:String</code> &mdash; The id of the Document to get.
+		 		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../com/distriqt/extension/couchbase/Document.html">Document</a></code> &mdash; The Document with the given id, or null if it does not exist.
+		 		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody"><p>
+		 The following retrieves an existing document, and updates a value
+		 if the document was found.
+		 </p>
+		 		 <div class="listing"><pre>
+         var doc:Document = db.getExistingDocument( documentId );
+         if (doc != null)
+         {
+             // Document exists
+             doc.properties.someTestValue = 123456789;
+             doc.commit();
+         }
+         </pre></div>
+		 </div></div><a name="sync()"></a><a name="sync(String,com.distriqt.extension.couchbase.Authenticator)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sync</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function sync(url:String, auth:<a href="../../../../com/distriqt/extension/couchbase/Authenticator.html">Authenticator</a> = null):Boolean</code><p></p><p></p><p>
+		 <p>
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">url</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">auth</span>:<a href="../../../../com/distriqt/extension/couchbase/Authenticator.html">Authenticator</a></code> (default = <code>null</code>)<code></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; </td></tr></table></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Wed Aug 16 2017, 08:40 AM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Wed Aug 16 2017, 08:40 AM +10:00  -->

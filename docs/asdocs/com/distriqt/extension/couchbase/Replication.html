@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="Replication,com.distriqt.extension.couchbase.Replication,EXT_CONTEXT_ID,STORAGE_FORESTDB,STORAGE_SQLITE,VERSION,changesCount,completedChangesCount,create,database,databaseName,documentCount,documentID,encryptionKey,implementation,isPullReplication,isSupported,lastError,lastSequenceNumber,maxRevTreeDepth,method,nativeVersion,password,properties,readOnly,remoteUrl,running,service,status,storageType,username,version"><title>com.distriqt.extension.couchbase.Replication</title></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Replication - distriqt // Couchbase';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Couchbase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?com/distriqt/extension/couchbase/Replication.html&amp;com/distriqt/extension/couchbase/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Replication</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Replication"); titleBar_setSubNav(false,true,false,false,false,false,false,false,false,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.couchbase</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  Replication extends  flash.events.IEventDispatcher</td></tr></table><p></p><p></p><p></p>
+	 Represents details about a replication between a local and a remote database.
+	 Replications can be one-shot or continuous.
+	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#changesCount" class="signatureLink">changesCount</a> : int<div class="summaryTableDescription">[read-only] 
+	     The total number of changes to be processed, if the task is active, else 0
+	     </div></td><td class="summaryTableOwnerCol">Replication</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#completedChangesCount" class="signatureLink">completedChangesCount</a> : int<div class="summaryTableDescription">[read-only] 
+	     The number of completed changes processed, if the task is active, else 0
+	     </div></td><td class="summaryTableOwnerCol">Replication</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isPullReplication" class="signatureLink">isPullReplication</a> : Boolean<div class="summaryTableDescription">[read-only] 
+	     Does the replication pull from (as opposed to push to) the target?
+	     </div></td><td class="summaryTableOwnerCol">Replication</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#lastError" class="signatureLink">lastError</a> : Object<div class="summaryTableDescription">[read-only] 
+	     If an error occurred this object will contain the following properties:
+	     
+	      error: (String) A description of the error
+	      errorCode: (int) The error code
+	     
+	     </div></td><td class="summaryTableOwnerCol">Replication</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#remoteUrl" class="signatureLink">remoteUrl</a> : String<div class="summaryTableDescription">[read-only] 
+	     The URL of the remote database
+	     </div></td><td class="summaryTableOwnerCol">Replication</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#running" class="signatureLink">running</a> : Boolean<div class="summaryTableDescription">[read-only] 
+	     true while the replication is running, false if it's stopped.</div></td><td class="summaryTableOwnerCol">Replication</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#status" class="signatureLink">status</a> : String<div class="summaryTableDescription">[read-only] 
+	     The replication's current state, one of:
+	     
+	         stopped
+	         offline
+	         idle
+	         active
+	     
+	     </div></td><td class="summaryTableOwnerCol">Replication</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="changesCount"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">changesCount</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>changesCount:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	     The total number of changes to be processed, if the task is active, else 0
+	     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get changesCount():int</code><br/></div><a name="propertyDetail"></a><a name="completedChangesCount"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">completedChangesCount</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>completedChangesCount:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	     The number of completed changes processed, if the task is active, else 0
+	     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get completedChangesCount():int</code><br/></div><a name="propertyDetail"></a><a name="isPullReplication"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isPullReplication</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isPullReplication:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	     Does the replication pull from (as opposed to push to) the target?
+	     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isPullReplication():Boolean</code><br/></div><a name="propertyDetail"></a><a name="lastError"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">lastError</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>lastError:Object</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	     If an error occurred this object will contain the following properties:
+	     <ul>
+	      <li><code>error</code>: (<code>String</code>) A description of the error</li>
+	      <li><code>errorCode</code>: (<code>int</code>) The error code</li>
+	     </ul>
+	     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get lastError():Object</code><br/></div><a name="propertyDetail"></a><a name="remoteUrl"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">remoteUrl</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>remoteUrl:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	     The URL of the remote database
+	     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get remoteUrl():String</code><br/></div><a name="propertyDetail"></a><a name="running"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">running</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>running:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	     <code>true</code> while the replication is running, <code>false</code> if it's stopped.
+	     Note that a continuous replication never actually stops; it only goes idle waiting for new data to appear.
+	     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get running():Boolean</code><br/></div><a name="propertyDetail"></a><a name="status"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">status</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>status:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	     The replication's current state, one of:
+	     <ul>
+	         <li>stopped</li>
+	         <li>offline</li>
+	         <li>idle</li>
+	         <li>active</li>
+	     </ul>
+	     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get status():String</code><br/></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Wed Aug 16 2017, 08:40 AM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Wed Aug 16 2017, 08:40 AM +10:00  -->
