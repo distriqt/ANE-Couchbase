@@ -110,7 +110,7 @@ package com.distriqt.test.couchbase
 			if (_database == null)
 			{
 				var options:DatabaseOptions = new DatabaseOptions();
-				options.storageType = DatabaseOptions.STORAGE_SQLITE;
+//				options.storageType = DatabaseOptions.STORAGE_SQLITE;
 				
 				_database = Couchbase.service.getDatabase( "testdb", options );
 			}
